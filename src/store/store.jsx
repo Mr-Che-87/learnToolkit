@@ -1,19 +1,14 @@
-
-//Redux-Toolkit:
-import { configureStore } from "@reduxjs/toolkit";  //вместо старого createStore и кучи приблуд для ассинхронности
+import { configureStore } from "@reduxjs/toolkit";  
 import todoSlice from "../features/todoSlice";  //т.к. экпорт todoSlice дефолтный -  можно использовать любое имя (import todoReduser, например).
 
 const store = configureStore({
   reducer: {   
-    todo: todoSlice,    //todo - имя слайса
-     ///....все редукторы через запятую
+    todo: todoSlice,   
   }, 
-
- // ...далее тут могут быть и другие параметры
-
 });
 
 export default store;
+
 
 
 
